@@ -19,6 +19,3 @@ function showcaseTextScroll(item) {
 }
 
 window.addEventListener("scroll", function(){onScrollUpdate()})
-if (blinkingText) {
-    setInterval(updateScrollText, 1000)
-}
