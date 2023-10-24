@@ -1,5 +1,5 @@
 var mainBox = document.getElementById("main-box")
-var scrollText = document.getElementById("scroll-text")
+var scrollText = document.getElementById("full-screen-info-text")
 
 function onScrollUpdate() {
     var yPos = 0 - window.pageYOffset / 1.3 + (mainBox.clientHeight / 6)
