@@ -1,5 +1,3 @@
-const blinkingText = false
-
 var mainBox = document.getElementById("main-box")
 var scrollText = document.getElementById("scroll-text")
 
@@ -21,15 +19,6 @@ function showcaseTextScroll(item) {
 }
 
 window.addEventListener("scroll", function(){onScrollUpdate()})
-
-function updateScrollText() {
-    if (scrollText.innerHTML == "▼ Scroll down ▼") {
-        scrollText.innerHTML = "Scroll down"
-    }
-    else {
-        scrollText.innerHTML = "▼ Scroll down ▼"
-    }
-}
 if (blinkingText) {
     setInterval(updateScrollText, 1000)
 }
